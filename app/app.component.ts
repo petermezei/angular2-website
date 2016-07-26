@@ -4,16 +4,16 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { ProductService } from './products/product.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
     selector: 'pm-app',
     template: `
         <navbar></navbar>
-        <div class='container'>
-            <router-outlet></router-outlet>
-        </div>
+        <router-outlet></router-outlet>
+        <footer></footer>
      `,
-    directives: [NavbarComponent, ROUTER_DIRECTIVES],
+    directives: [NavbarComponent, FooterComponent, ROUTER_DIRECTIVES],
     providers: [ProductService,
                 HTTP_PROVIDERS]
 })

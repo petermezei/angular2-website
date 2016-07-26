@@ -1,16 +1,19 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { WelcomeComponent } from './home/welcome.component';
+import { WelcomeComponent } from './home/index.component';
 import { ProductRoutes }        from './products/product.routes';
-import { HektorRoutes } from './hektor/hektor.routes';
-import { NotFoundComponent } from './404/404.component';
+import { NotFoundComponent } from './msg/404.component';
+import { TauComponent } from './tau/tau.component';
+import { CompanyRoutes } from './company/company.routes';
+import { ApiRoutes } from './api/api.routes';
 
 export const routes: RouterConfig = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full'},
-  { path: 'welcome', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent },
   { path: '404', component: NotFoundComponent },
+  { path: 'tau', component: TauComponent },
   ...ProductRoutes,
-  ...HektorRoutes,
+  ...CompanyRoutes,
+  ...ApiRoutes,
   { path: '**', redirectTo: '/404' }
 ];
 

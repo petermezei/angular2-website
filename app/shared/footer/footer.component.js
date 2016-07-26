@@ -9,26 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
-var product_service_1 = require('./products/product.service');
-var navbar_component_1 = require('./shared/navbar/navbar.component');
-var footer_component_1 = require('./shared/footer/footer.component');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.pageTitle = 'Acme Product Management';
+var FooterComponent = (function () {
+    function FooterComponent() {
     }
-    AppComponent = __decorate([
+    FooterComponent = __decorate([
         core_1.Component({
-            selector: 'pm-app',
-            template: "\n        <navbar></navbar>\n        <router-outlet></router-outlet>\n        <footer></footer>\n     ",
-            directives: [navbar_component_1.NavbarComponent, footer_component_1.FooterComponent, router_1.ROUTER_DIRECTIVES],
-            providers: [product_service_1.ProductService,
-                http_1.HTTP_PROVIDERS]
+            selector: 'footer',
+            templateUrl: 'app/shared/footer/footer.component.html',
+            styleUrls: ['app/shared/footer/footer.component.css'],
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], FooterComponent);
+    return FooterComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.FooterComponent = FooterComponent;
+//# sourceMappingURL=footer.component.js.map

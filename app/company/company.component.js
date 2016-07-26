@@ -10,22 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var NotFoundComponent = (function () {
-    function NotFoundComponent(router) {
-        this.router = router;
+var CompanyComponent = (function () {
+    function CompanyComponent() {
+        this.pageTitle = 'Welcome';
     }
-    NotFoundComponent.prototype.ngOnInit = function () {
-        //Nothing;
-    };
-    NotFoundComponent = __decorate([
+    CompanyComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/404/404.component.html',
-            styleUrls: ['app/404/404.component.css'],
+            templateUrl: '/app/company/company.component.html',
+            styleUrls: ['app/company/company.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], NotFoundComponent);
-    return NotFoundComponent;
+        __metadata('design:paramtypes', [])
+    ], CompanyComponent);
+    return CompanyComponent;
 }());
-exports.NotFoundComponent = NotFoundComponent;
-//# sourceMappingURL=404.component.js.map
+exports.CompanyComponent = CompanyComponent;
+//# sourceMappingURL=company.component.js.map

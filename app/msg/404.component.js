@@ -10,25 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var HektorComponent = (function () {
-    function HektorComponent(router) {
+var NotFoundComponent = (function () {
+    function NotFoundComponent(router) {
         this.router = router;
-        this.pageTitle = 'Demo Text';
-        this.people = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        this.hello = 'hello';
     }
-    HektorComponent.prototype.ngOnInit = function () {
+    NotFoundComponent.prototype.ngOnInit = function () {
         //Nothing;
     };
-    HektorComponent = __decorate([
+    NotFoundComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/hektor/hektor.component.html',
-            styleUrls: ['app/hektor/hektor.component.css'],
+            templateUrl: 'app/msg/404.component.html',
+            styleUrls: ['app/msg/404.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], HektorComponent);
-    return HektorComponent;
+    ], NotFoundComponent);
+    return NotFoundComponent;
 }());
-exports.HektorComponent = HektorComponent;
-//# sourceMappingURL=hektor.component.js.map
+exports.NotFoundComponent = NotFoundComponent;
+//# sourceMappingURL=404.component.js.map
