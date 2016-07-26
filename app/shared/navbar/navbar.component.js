@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var NavbarComponent = (function () {
     function NavbarComponent() {
+        this.hello = function () {
+            console.log("hello");
+        };
     }
     NavbarComponent = __decorate([
         core_1.Component({
