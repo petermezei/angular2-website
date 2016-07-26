@@ -14,6 +14,8 @@ var HektorComponent = (function () {
     function HektorComponent(router) {
         this.router = router;
         this.pageTitle = 'Demo Text';
+        this.people = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        this.hello = 'hello';
     }
     HektorComponent.prototype.ngOnInit = function () {
         //Nothing;
