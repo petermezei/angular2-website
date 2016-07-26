@@ -1,4 +1,4 @@
-import { provideRouter, RouterConfig } from '@angular/router';
+import { provideRouter, RouterConfig, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { WelcomeComponent } from './home/index.component';
 import { ProductRoutes }        from './products/product.routes';

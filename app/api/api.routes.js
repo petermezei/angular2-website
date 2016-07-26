@@ -6,6 +6,9 @@ exports.ApiRoutes = [
         path: 'api',
         component: api_component_1.ApiComponent
     },
-    { path: 'pricing', component: pricing_component_1.PricingComponent }
+    {
+        path: 'api/pricing',
+        component: pricing_component_1.PricingComponent
+    }
 ];
 //# sourceMappingURL=api.routes.js.map

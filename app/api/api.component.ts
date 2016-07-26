@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
     templateUrl: '/app/api/api.component.html',
-    styleUrls: ['app/api/api.component.css'],
+    styleUrls: ['/app/api/api.component.css'],
     directives: [ROUTER_DIRECTIVES]
 })
 export class ApiComponent {

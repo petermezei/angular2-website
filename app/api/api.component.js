@@ -17,7 +17,7 @@ var ApiComponent = (function () {
     ApiComponent = __decorate([
         core_1.Component({
             templateUrl: '/app/api/api.component.html',
-            styleUrls: ['app/api/api.component.css'],
+            styleUrls: ['/app/api/api.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
