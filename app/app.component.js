@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 var product_service_1 = require('./products/product.service');
+var jobs_service_1 = require('./company/jobs/jobs.service');
 var navbar_component_1 = require('./shared/navbar/navbar.component');
 var footer_component_1 = require('./shared/footer/footer.component');
 var AppComponent = (function () {
@@ -23,7 +24,8 @@ var AppComponent = (function () {
             selector: 'pm-app',
             template: "\n        <navbar></navbar>\n        <router-outlet></router-outlet>\n        <footer></footer>\n     ",
             directives: [navbar_component_1.NavbarComponent, footer_component_1.FooterComponent, router_1.ROUTER_DIRECTIVES],
-            providers: [product_service_1.ProductService,
+            providers: [jobs_service_1.JobsService,
+                product_service_1.ProductService,
                 http_1.HTTP_PROVIDERS]
         }), 
         __metadata('design:paramtypes', [])

@@ -3,6 +3,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { ProductService } from './products/product.service';
+import { JobsService } from './company/jobs/jobs.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
@@ -14,7 +15,8 @@ import { FooterComponent } from './shared/footer/footer.component';
         <footer></footer>
      `,
     directives: [NavbarComponent, FooterComponent, ROUTER_DIRECTIVES],
-    providers: [ProductService,
+    providers: [JobsService,
+                ProductService,
                 HTTP_PROVIDERS]
 })
 
