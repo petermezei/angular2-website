@@ -12,6 +12,7 @@ import { IJob } from './job';
 
 export class JobsComponent implements OnInit {
     jobs: IJob[];
+    errorMessage: any;
 
     constructor(private router: Router,
                 private _jobsService: JobsService){

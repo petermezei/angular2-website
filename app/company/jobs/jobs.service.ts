@@ -17,21 +17,21 @@ export class JobsService {
     getJobs(): Observable<IJob[]> {
         return this._http.get(this._jobsUrl)
             .map((response: Response) => <IJob[]> response.json())
-            .do()
+            .do(()=>{})
             .catch(this.handleError);
     }
 
-    getJob(id: number): Observable<IProduct> {
+    getJob(id: number): Observable<IJob> {
         return this._http.get(this._jobUrl + id)
             .map((response: Response) => <IJob> response.json())
-            .do()
+            .do(()=>{})
             .catch(this.handleError);
     }
 
     private handleError(error: Response) {
         // in a real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console
-        console.error(error);
+        //console.error(error);
         return Observable.throw(error.json().error || 'Server error');
     }
 }

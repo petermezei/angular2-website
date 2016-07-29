@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 // Our main routes
 import { APP_ROUTER_PROVIDERS } from './app.routes';
 
-bootstrap(AppComponent, [
+import {enableProdMode} from '@angular/core';
+
+enableProdMode();
+
+bootstrap(AppComponent,[
   APP_ROUTER_PROVIDERS
-])
-.catch(err => console.error(err));
+]).catch((err: any) => console.error(err))
