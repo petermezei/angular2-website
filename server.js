@@ -1,3 +1,4 @@
+/// <reference path="./typings/index.d.ts" />
 "use strict";
 var path = require('path');
 var express = require('express');
@@ -31,6 +32,7 @@ function getJobs() {
     });
 }
 ;
+//
 getJobs();
 myCache.on("expired", function (key, value) {
     console.log("Jobs Expired");
@@ -64,7 +66,7 @@ app.get('/api/jobservice/:id*', function (req, response) {
         }
     });
     if (!result) {
-        response.send("404");
+        response.status(404).send('Job Not Found');
     }
 });
 app.get('/*', function (req, res) {
@@ -76,3 +78,4 @@ app.listen(port, 'localhost', function (err) {
     }
     console.info('==> Listening on port %s. Open up http://localhost:%s/ in your browser.', port, port);
 });
+//# sourceMappingURL=server.js.map

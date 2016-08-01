@@ -1,13 +1,15 @@
-import path = require('path');
+/// <reference path="./typings/index.d.ts" />
+
+var path = require('path');
 import * as glob from 'glob';
-import express = require('express');
-import connect = require('connect');
-import http = require('http');
-import NodeCache = require( "node-cache" );
+var express = require('express');
+var connect = require('connect');
+var http = require('http');
+var NodeCache = require( "node-cache" );
 
 const isDeveloping: boolean = process.env.NODE_ENV !== 'production';
 const port: number = isDeveloping ? 3000 : 3000;
-const app: express.Express = express();
+const app = express();
 
 app.use(connect.compress());
 
@@ -73,7 +75,7 @@ app.get('/api/jobservice/:id*', function(req, response) {
         }
     });
     if(!result){
-        response.send("404");
+        response.status(404).send('Job Not Found');
     }
 });
 

@@ -8,7 +8,12 @@
     "sourceMap": true,
     "removeComments": false
   },
+  "exclude":[
+    "./node_modules",
+    "./typings/"
+  ],
   "files": [
+    "server.ts",
     "app/main.ts"
   ]
 }
