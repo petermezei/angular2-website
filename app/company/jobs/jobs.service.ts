@@ -9,8 +9,8 @@ import { IJob } from './job';
 
 @Injectable()
 export class JobsService {
-    private _jobsUrl = 'https://blog.slamby.com/wp-json/wp/v2/posts?categories=265';
-    private _jobUrl = 'https://blog.slamby.com/wp-json/wp/v2/posts/';
+    private _jobsUrl = '/api/jobservice';
+    private _jobUrl = '/api/jobservice/';
 
     constructor(private _http: Http) { }
 

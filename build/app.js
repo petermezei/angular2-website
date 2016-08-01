@@ -15987,8 +15987,8 @@ webpackJsonp([2,0],[
 	let JobsService = class JobsService {
 	    constructor(_http) {
 	        this._http = _http;
-	        this._jobsUrl = 'https://blog.slamby.com/wp-json/wp/v2/posts?categories=265';
-	        this._jobUrl = 'https://blog.slamby.com/wp-json/wp/v2/posts/';
+	        this._jobsUrl = '/api/jobservice';
+	        this._jobUrl = '/api/jobservice/';
 	    }
 	    getJobs() {
 	        return this._http.get(this._jobsUrl)
