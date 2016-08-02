@@ -71,7 +71,7 @@ app.get('/api/jobservice/:id*', function (req, response) {
         }
     });
     if (!result) {
-        response.status(404).send('Job Not Found');
+        response.status(404).send('{"error":"Job Not Found"}');
     }
 });
 function AddDocument(document) {
